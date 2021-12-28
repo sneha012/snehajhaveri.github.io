@@ -1,2 +1,2 @@
 # snehajhaveri.github.io
-Portfolio with my past projects and experience
+Here is a quick portfolio with my past projects and experience!
