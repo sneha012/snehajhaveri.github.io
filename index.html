@@ -262,9 +262,9 @@
         <li>
           <ol class="type">
             <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".nlp">Natural Language Processing</a></li>
+            <li><a href="#" data-filter=".ml">Machine Learning</a></li>
             <li><a href="#" data-filter=".cv">Computer Vision</a></li>
-            <li><a href="#" data-filter=".ir">Information Retrieval</a></li>
-            <li><a href="#" data-filter=".gml">General Machine Learning</a></li>
             <li><a href="#" data-filter=".other">Other</a></li>
           </ol>
         </li>
@@ -289,14 +289,14 @@
 
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 gml">
+        <div class="col-sm-6 col-md-3 col-lg-3 ml">
           <div class="portfolio-item">
           <figcaption align = "center"> <b>Bidirectional Web Service (WS) recommendation based on Quality of Experience (QoE)</b> </figcaption>
             <div class="hover-bg"> 
 
             <a href="#p5" class="portfolio-link" data-toggle="modal">
               <div class="hover-text">
-                <h4>Web Services AND Natural Language Processing</h4>
+                <h4>Web Services and Natural Language Processing</h4>
                 <div class="clearfix"></div>
               </div>
               <img src="img/proj5.png" class="img-responsive" alt="Project Title">
@@ -305,7 +305,7 @@
 
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 cv">
+        <div class="col-sm-6 col-md-3 col-lg-3 nlp">
           <div class="portfolio-item">
           <figcaption align = "center"> <b>L2 Language Learner Classification</b> </figcaption>
             <div class="hover-bg"> 
@@ -315,13 +315,13 @@
                 <h4>Machine Learning and Natural Language Processing</h4>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/proj2.jpg" class="img-responsive" alt="Project Title">
+              <img src="img/l2_img.png" class="img-responsive" alt="Project Title">
               </a>
               </div>
 
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 other ir">
+        <div class="col-sm-6 col-md-3 col-lg-3 other ml">
           <div class="portfolio-item">
           <figcaption align = "center"> Parkinson’s Disease Recognition using Speech Acoustic Parameters Classification<b>
 </b> </figcaption>
@@ -332,13 +332,13 @@
                 <h4>Machine Learning and Speech Analysis</h4>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/proj3.png" class="img-responsive" alt="Project Title">
+              <img src="img/parkinson.png" class="img-responsive" alt="Project Title">
               </a>
               </div>
 
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 ir">
+        <div class="col-sm-6 col-md-3 col-lg-3 nlp">
           <div class="portfolio-item">
           <figcaption align = "center"> <b>Disaster Tweets Classification using Natural Language Processing</b> </figcaption>
             <div class="hover-bg"> 
@@ -348,14 +348,14 @@
                 <h4>Machine Learning and Natural Language Processing</h4>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/proj4.png" class="img-responsive" alt="Project Title">
+              <img src="img/disaster.jpg" class="img-responsive" alt="Project Title">
               </a>
               </div>
 
           </div>
         </div>
 
-       <div class="col-sm-6 col-md-3 col-lg-3 gml">
+       <!--<div class="col-sm-6 col-md-3 col-lg-3 gml">
           <div class="portfolio-item">
           <figcaption align = "center"> <b>Taxi Trajectory Pattern Mining using Urban Computing</b> </figcaption>
             <div class="hover-bg"> 
@@ -370,8 +370,8 @@
               </div>
 
           </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 gml">
+        </div>-->
+        <div class="col-sm-6 col-md-3 col-lg-3 ml">
           <div class="portfolio-item">
           <figcaption align = "center"> <b>Spotify Songs Popularity Prediction</b> </figcaption>
             <div class="hover-bg"> 
@@ -381,7 +381,7 @@
                 <h4>Machine Learning</h4>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/proj7.jpg" class="img-responsive" alt="Project Title">
+              <img src="img/spotify.jpg" class="img-responsive" alt="Project Title">
               </a>
               </div>
 
@@ -486,20 +486,34 @@ Android Apps using various CS concepts (A* algorithm and Trie, HashMap, HashSet 
                     <div class="col-lg-12 col-lg-offset-0">
 
                         <div class="modal-body" align="center">
-<button align="right" type="button" class="btn btn-default" data-dismiss="modal"><i align="right" class="fa fa-times"></i> Close</button><br>
-                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res1_1.jpg" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res1_2.png" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res1_3.jpg" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res1_4.png" height = "300" alt="">
-                            <br><br>
+                            
                             <!-- <p>Worked under Dr. Sowmya Kamath S (2018)</p> <br> <br> -->
-                            <p style="text-align:justify">Designed and built a framework that can interpret an image, identify contextually unfit objects within it and remove these objects to enhance the image. Our model used CNN and  Mask RCNN for understanding the scene and segmenting various objects within the image. Context Model and Latent Tree were used to identify out of context objects and exemplar-based inpainting was used to eliminate these objects. A key application of the model is to detect unusual activities such as fires and accidents by processing live camera feed in real-time while it can also use the latter part of the model to enhance an image by eliminating background noise.
+                            <!--<p style="text-align:justify">Designed and built a framework that can interpret an image, identify contextually unfit objects within it and remove these objects to enhance the image. Our model used CNN and  Mask RCNN for understanding the scene and segmenting various objects within the image. Context Model and Latent Tree were used to identify out of context objects and exemplar-based inpainting was used to eliminate these objects. A key application of the model is to detect unusual activities such as fires and accidents by processing live camera feed in real-time while it can also use the latter part of the model to enhance an image by eliminating background noise.-->
+                            <h4>Contextual Object Relationship Identification for Anomaly Detection and Image Enhancement</h4><br><br>
 
-                              </p> <br>
-                            <p>Concepts Used: Deep Learning, Graph Algorithms, MATLAB and Computer Vision</p> 
+                              <ul>
+                                <li>- Designed and built a framework that can interpret an image, identify contextually unfit objects within
+                                  it and remove these objects to enhance the image. </li><br>
+                                <li>- Our model used CNN and Mask RCNN for understanding the scene and segmenting various objects
+                                  within the image. Context Model and Latent Tree were used to identify out of context objects and
+                                  exemplar-based inpainting was used to eliminate these objects</li><br>
+                                <li>- A key application of the model is to detect unusual activities such as fires and accidents by processing
+                                  live camera feed in real-time while it can also use the latter part of the model to enhance an image by
+                                  eliminating background noise.</li><br>
+                                <li>- Concepts used : Computer Vision and Deep Learning</li>
+                              </ul>  
+                            <br> 
+                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res1_1.jpg" height = "200" width = "200" alt="">
+                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res1_2.png" height = "200" width = "200" alt="">
+                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res1_3.jpg" height = "200" width = "200" alt="">
+                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res1_4.png" height = "200" width = "200" alt="">
+                            <br><br>
+
                             <br>
                             
                         </div>
+                        <button align="right" type="button" class="btn btn-default" data-dismiss="modal"><i align="right" class="fa fa-times"></i> Close</button><br>
+
                     </div>
                 </div>
             </div>
@@ -518,16 +532,17 @@ Android Apps using various CS concepts (A* algorithm and Trie, HashMap, HashSet 
                 <div class="row">
                     <div class="col-lg-12 col-lg-offset-0">
                         <div class="modal-body" align="center">
-                            <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button><br>                            
-                            <img align="center" class="col-xs-6 col-md-2" src="img/proj/res2_1.png" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res2_2.jpg" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-2" src="img/proj/res2_3.jpg" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res2_4.jpg" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-2" src="img/proj/res2_5.jpg" height = "300" alt="">
-                            <br><br><br>
-                            <p style="text-align:justify">Built a model to fetch documents from https://lang-8.com Lang-8 language learning website, extract linguistic features and further classify English journals written by native speakers (L1) of East Asian languages vs native speakers of European languages based on the features extracted.</p>
+                            <h4>Feature Extraction and L2 Language Learner Classification</h4><br><br>
+
+                              <ul>
+                                <li>- Built a model to fetch documents from Lang-8 language learning website (https://lang-8.com), extracted linguistic features like average sentence length, reading ease score, POS counts, type token ratio etc. </li><br>
+                                <li>- Worked on classification of  English journals written by native speakers of East Asian languages vs native speakers of European languages based on the features extracted.</li><br>
+                                <li>- After performing feature ablation and training our data with the best performing model (XGBoost), we achieved an accuracy of about 70%.</li><br>
+                                <li>- Concepts used : Machine Learning and Natural language processing</li>
+                              </ul>  
                             <br>
-                            
+                            <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button><br>                            
+ 
                         </div>
                     </div>
                 </div>
@@ -548,13 +563,19 @@ Android Apps using various CS concepts (A* algorithm and Trie, HashMap, HashSet 
                     <div class="col-lg-12 col-lg-offset-0">
 
                         <div class="modal-body" align="center">
-<button align="right" type="button" class="btn btn-default" data-dismiss="modal"><i align="right" class="fa fa-times"></i> Close</button><br>
-                            <img align="center" class="col-xs-6 col-md-4" src="img/proj/res3_1.png" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-4" src="img/proj/res3_2.png" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-4" src="img/proj/res3_3.png" height = "300" alt="">
                             <br><br>
-                            <p style="text-align:justify">A system for diagnosing people with Parkinson's disease (PWP) using classification of the characteristics of their voices.Two types of classifiers, namely kNN and SVM are used in order to select the most pertinent feature parameters for diagnosing PWP.
+                            <h4>Parkinson’s Disease Recognition using Speech Acoustic Parameters Classification</h4><br><br>
 
+                              <ul>
+                                <li>- Built a system for diagnosing people with Parkinson's disease (PWP) based on the characteristics of their voices extracted through speech analysis. </li><br>
+                                <li>- Features extracted from the voice samples are fed into KNN and SVM classifiers. Each
+                                  classifier is validated using two Cross Validations.</li><br>
+                                <li>- The final accuracy achieved for classifying people with Parkinson's disease with the best model (kNN) is around 80%</li><br>
+                                <li>- Concepts used : Machine Learning and Speech Analysis.</li>
+                              </ul>  
+                            <br>
+
+                            <button align="right" type="button" class="btn btn-default" data-dismiss="modal"><i align="right" class="fa fa-times"></i> Close</button><br>
 </p>
                 <br>
                             
@@ -579,14 +600,17 @@ Android Apps using various CS concepts (A* algorithm and Trie, HashMap, HashSet 
                     <div class="col-lg-12 col-lg-offset-0">
 
                         <div class="modal-body" align="center">
-<button align="right" type="button" class="btn btn-default" data-dismiss="modal"><i align="right" class="fa fa-times"></i> Close</button><br>
-                            <img align="center" class="col-xs-6 col-md-4" src="img/proj/res4_1.jpeg" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-4" src="img/proj/res4_2.jpeg" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-4" src="img/proj/res4_3.png" height = "300" alt="">
                             <br><br>
                             
-                            <p style="text-align:justify">Built a model to predict whether the tweet is actually associated to a real disaster or not using feature engineering based on Natural Language Processing.
-                            </p> <br>     
+                            <h4>Disaster Tweets Classification</h4><br><br>
+
+                              <ul>
+                                <li>- Built a model to predict whether the tweet is actually associated to a real disaster or not using feature engineering based on Natural Language Processing with a final F1 - Score of around 0.71.</li><br>
+                                <li>- Concepts used : Natural Language Processing and Machine Learning.</li>
+                              </ul>  
+                            <br>
+                            <button align="right" type="button" class="btn btn-default" data-dismiss="modal"><i align="right" class="fa fa-times"></i> Close</button><br>
+
                         </div>
                     </div>
                 </div>
@@ -610,12 +634,17 @@ Android Apps using various CS concepts (A* algorithm and Trie, HashMap, HashSet 
                         <div class="modal-body" align="center">
 <button align="right" type="button" class="btn btn-default" data-dismiss="modal"><i align="right" class="fa fa-times"></i> Close</button><br>
                             <img align="center" class="col-xs-6 col-md-12" src="img/proj/res5_1.png" height = "400" alt="">
-                            <br><br>
-                            <p> Worked under Dr. Sowmya Kamath S (2017)</p> <br> <br>
-                            <p style="text-align:justify"> Built a Quality of Service (QoS) based bidirectional recommendation model using hybrid collaborative filtering techniques to recommend web services to customers and also to recommend potential consumers to service providers of web services. Also created Web services reviews data, applied sentiment analysis and used clustering to integrate the assigned sentiment rating with predicted QoS value to obtain the Quality of Experience (QoE) score, which further optimizes the recommendation.
-                            </p> <br>     
-                            <p>Concepts Used: Natural Language Processing, Machine Learning and Recommender Systems</p>
-                        </div>
+                            <h4>Bidirectional Web Service (WS) recommendation based on Quality of Experience (QoE)</h4><br><br>
+
+                              <ul>
+                                <li>- Built a QoS based bidirectional recommendation model using hybrid collaborative filtering techniques to recommend web services to customers and also to recommend potential consumers to service providers of web services. </li><br>
+                                <li>- Also created a WebService reviews data, applied sentiment analysis and used clustering to integrate the assigned sentiment rating with predicted QoS value to obtain the Quality of Experience score, which further optimizes the recommendation.</li><br>
+                                <li>- Accuracy : </li><br>
+                                <li>- Concepts used : Natural Language Processing, Machine Learning and Recommender Systems.</li>
+                              </ul>  
+                            <br>
+
+                            <button align="right" type="button" class="btn btn-default" data-dismiss="modal"><i align="right" class="fa fa-times"></i> Close</button><br>                        </div>
                     </div>
                 </div>
             </div>
@@ -659,234 +688,26 @@ Android Apps using various CS concepts (A* algorithm and Trie, HashMap, HashSet 
                 <div class="row">
                     <div class="col-lg-12 col-lg-offset-0">
                         <div class="modal-body" align="center">
-                        <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button><br>
                             <img align="center" class="col-xs-6 col-md-10" src="img/proj/res8_1.jpg" height = "400" alt="">
                             <img align="center" class="col-xs-6 col-md-2" src="img/proj/res8_2.png" height = "400" alt="">
                             <br><br>
-                            <p style="text-align:justify"> Spotify Popularity Prediction</p>
+                            <p style="text-align:justify"> Built a ensemble model to predict song popularity from Spotify songs dataset (Kaggle) with a final score of 0.73.</p>
                 <br>
-                            
+                          <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button><br>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 </div>
-<div class="portfolio-modal modal fade" id="p9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
-                        <div class="modal-body" align="center">
-                         <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> <br>
-                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res9_1.png" height = "200" alt="">
-                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res9_2.png" height = "200" alt="">
-                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res9_3.png" height = "200" alt="">
-                            <img align="center" class="col-xs-6 col-md-3" src="img/proj/res9_4.png" height = "200" alt="">
-                            <br><br>
-                            <p style="text-align:justify">Prof. Dinesh Naik , Web scraped data from various e-commerce sites and built an Item Based Collaborative Filter (IBCF).
-Implemented several similarity algorithms like correlation with weighted prediction technique to generate recommendations.
-Developed RDF Schema to obtain semantic based search with TF-IDF relevance and binary index tree storage with greedy
-DFS retrieval to reduce computation cost. --HTML, CSS3, PHP, RDF, Protege, OWL, MySQL, Visual Studio, Python & Selenium</p>
-                <br>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-<div class="portfolio-modal modal fade" id="p10" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
-                        <div class="modal-body" align="center">
-                         <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> <br>
-                            <img align="center" class="col-xs-6 col-md-8" src="img/proj/res10_1.png" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-4" src="img/proj/res10_2.png" height = "300" alt="">
-                            <br><br>
-                            <p style="text-align:justify">Prof. Geetha V. , Implemented the Suzuki and Two Pass algorithms for CCL to identify objects and background in an image.
-Achieved thread level parallelism and run distributively using OpenMP and Open MPI directives. --C/C++, OpenMP & Open MPI</p>
-                <br>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-<div class="portfolio-modal modal fade" id="p11" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" align="center">
-                         <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> <br>
-                            <img align="center" class="col-xs-6 col-md-12" src="img/proj/res11.jpg" height = "400" alt="">
-                            <br><br>
-                            <p style="text-align:justify">Mentored juniors and worked with them on applying data analysis and ML clustering
-algorithms on accident prone areas data of a region. The application captures location of user (if location belongs to danger
-or safe zone cluster) and alerts the driver of type of risks based on age, expertise and gender details. --Python-Django</p>
-                <br>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-<div class="portfolio-modal modal fade" id="p12" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" align="center">
-                         <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> <br>
-                            <img align="center" class="col-xs-6 col-md-12" src="img/proj/res12.jpg" height = "400" alt="">
-                            <br><br>
-                            <p style="text-align:justify">Prof. Dinesh Naik , Web scraped data from various e-commerce sites and built an Item Based Collaborative Filter (IBCF).
-Implemented several similarity algorithms like correlation with weighted prediction technique to generate recommendations.
-Developed RDF Schema to obtain semantic based search with TF-IDF relevance and binary index tree storage with greedy
-DFS retrieval to reduce computation cost. --HTML, CSS3, PHP, RDF, Protege, OWL, MySQL, Visual Studio, Python & Selenium</p>
-                <br>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-<div class="portfolio-modal modal fade" id="p13" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
-                        <div class="modal-body" align="center">
-                         <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> <br>
-                            <img align="center" class="col-xs-6 col-md-4" src="img/proj/res13_1.png" height = "400" alt="">
-                            <img align="center" class="col-xs-6 col-md-8" src="img/proj/res13_2.png" height = "400" alt="">
-                            <br><br>
-                            <p style="text-align:justify">Mr. Prakash P., Trained data containing multiple emotions and detected emotions like sadness and happiness
-by implementing a regression algorithm. Optimized code for detecting multiple faces at angles
-and incomplete faces. --Python and OpenCV</p>
-                <br>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-<div class="portfolio-modal modal fade" id="p14" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" align="center">
-                         <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> <br>
-                            <img align="center" class="col-xs-6 col-md-12" src="img/proj/res14.jpg" height = "400" alt="">
-                            <br><br>
-                            <p style="text-align:justify">Miss Kajal Bangera, The GUI is implemented using HTML and CSS. The game’s algorithm and computations are
-performed using JavaScript. Developed new Finite State Automata for the heuristic of the game
-and compared it with the existing backtracking tree algorithm approach.</p>
-                <br>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-<div class="portfolio-modal modal fade" id="p15" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
-                        <div class="modal-body" align="center">
-                         <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> <br>
-                          <img align="center" class="col-xs-6 col-md-4" src="img/proj15.jpg" height = "450" alt="">
-                            <img align="center" class="col-xs-6 col-md-8" src="img/proj/res15.png" height = "450" alt="">
-                            <br><br>
-                            <p style="text-align:justify">Implemented a user interface for the scrabble board, validated the word formed by the user,
-calculated score based on the word (letter and grid weightage) and realized the end of the
-game. Implemented an algorithm for AI. --Python</p>
-                <br>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-<div class="portfolio-modal modal fade" id="p16" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" align="center">
-                         <button align="centre" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> <br>
-                          <img align="center" class="col-xs-6 col-md-6" src="img/proj/res16_1.png" height = "300" alt="">
-                            <img align="center" class="col-xs-6 col-md-6" src="img/proj/res16_2.jpg" height = "300" alt="">
-                            <br><br>
-                            <p style="text-align:justify">Used Java GUI framework. Worked with serialization and swings to store user data, check in and
-check out dates using a calendar and accordingly book a room based on it’s availability. --Java</p>
-                <br>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
+
+
+
+
+
+
+
 
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
